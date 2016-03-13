@@ -1,0 +1,25 @@
+{
+	"asi":true,       //如果是真，JSHint会无视没有加分号的行尾。
+	"boss": false,     // 如果为真，那么JSHint会允许在if，for，while里面编写赋值语句。
+	"curly": true,    // 如果为真，JSHint会要求你在使用if和while等结构语句时加上{}来明确代码块。
+	"eqeqeq": true,   // 如果为真，JSHint会看你在代码中是否都用了===或者是!==，而不是使用==和!=。
+	"eqnull": true,   // 如果为真，JSHint会允许使用”== null”作比较。== null 通常用来判断一个变量是undefined或者是null
+	"expr": true,      //允许应该出现赋值或函数调用的地方使用表达式。
+	"immed": true,    // 如果为真，JSHint要求匿名函数的调用如下：(function(){ // }());而不是(function(){ //bla bla })();
+	"latedef": true,  // 如果为真，变量定义前禁止使用
+	"newcap": true,   //如果为真， 构造器函数首字母大写
+	"noempty": true,   //如果为真，JSHint会禁止出现空的代码块（没有语句的代码块）。
+						 //如果为真，JSHint会禁用构造器，以避免一些问题。
+	"noarg": true,    // 如果为真，JSHint会禁止arguments.caller和arguments.callee的使用 arguments对象是一个类数组的对象
+	"sub": true,      // 如果为真，JSHint会允许各种形式的下标来访问对象。
+	"undef": true,    // 如果为真，JSHint会要求所有的非全局变量，在使用前都被声明。
+	"unused": true,  //禁止定义变量却不使用。
+	"regexp": true,   //如果为真，JSHint会不允许使用.和[^...]
+						 //的正则，因为这样的正则往往会匹配到你不期望的内容，并可能会应用造成一些危害。
+	"jquery"   : true,
+	"browser": true, //预定义全局变量 document ， navigator ， FileReader 等。
+	"devel": true,     //定义用于调试的全局变量： console ， alert。
+	"node": true,     // Node.js
+	"-W117": true     // true: Ignore `not defined` errors as an example of using a rule (W117) by code.
+}
+
